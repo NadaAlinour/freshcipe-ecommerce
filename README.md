@@ -4,7 +4,7 @@ An e-commerce application that allows the user to browse through product categor
 
 > **_UPDATE:_** The backend for this project (hosted on Supabase) seems to have expired so it's currently not functional.
 
- > **_NOTE:_**  This is part of my and my teammates graduation project. My role was to develop the frontend and to perform API integration along with my teammates. For practice and for more flexibility with improving/adding features, a new backend will be implemented in Node.js and Express. It was initially created using Strapi by my teammates who were working on the backend.
+ > **_NOTE:_**  This is part of my and my teammates graduation project. My role was to develop the frontend and to perform API integration along with my teammates. For practice and for more flexibility with improving/adding features, a new backend will be implemented in Nestjs. It was initially created using Strapi by my teammates who were working on the backend.
 
 
 ## Getting Started
