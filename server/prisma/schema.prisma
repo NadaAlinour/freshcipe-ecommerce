@@ -13,6 +13,7 @@ model User {
   username String
   email    String @unique
   password String
+  role     Role   @default(CUSTOMER)
   phone    String
   cart     Cart?
 }
@@ -118,3 +119,15 @@ model RecipeTag {
 // Favourites
 // Orders
 // Reviews
+
+enum Role {
+  CUSTOMER
+  ADMIN
+}
+
+enum OrderStatus {
+  PENDING
+  PAID
+  SHIPPED
+  DELIVER
+}
