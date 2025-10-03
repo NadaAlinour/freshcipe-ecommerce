@@ -6,13 +6,18 @@ import {
   Body,
   HttpStatus,
   Param,
+  UseGuards,
+  Request
 } from "@nestjs/common";
 import { CategoryService } from "./category.service";
+import { AuthGuard } from "src/auth/auth.guard";
 
 @Controller("category")
 export class CategoryController {
   constructor(private categoryService: CategoryService) {}
 
+
+  @UseGuards(AuthGuard)
   @HttpCode(HttpStatus.OK)
   @Post("create-category")
   createCategory(

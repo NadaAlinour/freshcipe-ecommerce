@@ -5,14 +5,16 @@ import {
   Get,
   Body,
   HttpStatus,
-  Param,
+  Param, UseGuards
 } from "@nestjs/common";
 import { ProductService } from "./product.service";
+import { AuthGuard } from "src/auth/auth.guard";
 
 @Controller("product")
 export class ProductController {
   constructor(private productService: ProductService) {}
 
+  @UseGuards(AuthGuard)
   @HttpCode(HttpStatus.OK)
   @Post("create-product")
   createCategory(
